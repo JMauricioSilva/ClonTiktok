@@ -5,6 +5,7 @@ import db from "./config/firebase";
 import { collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
+
   const [video, setVideos] = useState([]);
 
   async function getVideos() {
@@ -34,16 +35,6 @@ function App() {
             />
           );
         })}
-
-        {/* <Videos
-          likes = {400}
-          messages = {500}
-          shares = {600}
-          user = "Arthur Silva"
-          description = "Gato goleiro"
-          music = "Musica épica"
-          url= "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z"
-         /> */}
       </div>
     </div>
   );
